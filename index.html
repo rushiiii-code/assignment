@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rushi Patil's Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@4.0.0/dist/full.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+<body class="font-sans bg-base-100 text-base-content">
+
+  <!-- Header -->
+  <header class="p-4 bg-primary text-white flex justify-between items-center">
+    <h1 class="text-xl font-bold">Rushi Patil's Portfolio</h1>
+    <nav class="space-x-4">
+      <a href="#welcome" class="hover:underline">Home</a>
+      <a href="#about" class="hover:underline">About</a>
+      <a href="#achievements" class="hover:underline">Achievements</a>
+      <a href="#goals" class="hover:underline">Goals</a>
+      <a href="#personal" class="hover:underline">Personal</a>
+      <a href="#contact" class="hover:underline">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Welcome -->
+  <section id="welcome" class="p-6 text-center">
+    <h2 class="text-3xl font-bold mb-4">Welcome to My World 🌍</h2>
+
+    <!-- Owner Photo (fixed) -->
+    <img id="ownerPhoto" src="photo.jpg" alt="Rushi Patil" class="w-40 h-40 mx-auto rounded-full mb-4 border-4 border-primary" />
+
+    <!-- YouTube Video Introduction -->
+    <div class="mx-auto w-2/3 mb-4 aspect-video">
+      <iframe
+        src="https://www.youtube.com/embed/9iIX4PBplAY"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        class="w-full h-full rounded-lg"
+      ></iframe>
+    </div>
+
+    <!-- Quote -->
+    <p id="quote" class="italic text-lg text-gray-500 mt-4"></p>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="p-6">
+    <h2 class="text-2xl font-semibold mb-2">About Me</h2>
+    <ul class="list-disc list-inside">
+      <li><strong>Name:</strong> Rushi Patil</li>
+      <li><strong>Location:</strong> Palghar, Mumbai</li>
+      <li><strong>Education:</strong> B.Tech in Computer Science and Engineering</li>
+      <li><strong>Languages:</strong> English, Hindi</li>
+    </ul>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="p-6 bg-base-200">
+    <h2 class="text-2xl font-semibold mb-2">Achievements</h2>
+    <div id="achievements-list" class="space-y-2"></div>
+  </section>
+
+  <!-- Future Goals -->
+  <section id="goals" class="p-6">
+    <h2 class="text-2xl font-semibold mb-2">Future Goals</h2>
+    <p>I aim to become a full-stack developer, contribute to open-source projects, and use technology to solve real-world problems, especially in education and accessibility.</p>
+  </section>
+
+  <!-- Personal Side -->
+  <section id="personal" class="p-6 bg-base-200">
+    <h2 class="text-2xl font-semibold mb-4">Personal Side</h2>
+    <ul class="list-disc list-inside mb-2">
+      <li><strong>Hobbies:</strong> Chess, coding, cycling — they help sharpen focus and creativity.</li>
+      <li><strong>Role Models:</strong> Dr. A.P.J. Abdul Kalam (for vision and humility), Elon Musk (for bold innovation)</li>
+      <li><strong>Books:</strong> “Clean Code”, “Atomic Habits” — help in building habits and writing better code</li>
+      <li><strong>Websites:</strong> dev.to, GitHub, Stack Overflow</li>
+      <li><strong>Startups:</strong> Figma, Notion — admire their UX and impact</li>
+      <li><strong>Volunteering:</strong> Taught coding basics to rural students in 2023 as part of an NGO program</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="p-6">
+    <h2 class="text-2xl font-semibold mb-2">Contact Me</h2>
+    <div class="mb-4 space-y-1">
+      <p>📞 <a href="tel:+919876543210" class="text-blue-600">+91 98765 43210</a></p>
+      <p>📧 <a href="mailto:rushi@example.com" class="text-blue-600">rushi@example.com</a></p>
+      <p>💬 <a href="https://wa.me/919876543210" class="text-green-600">Chat on WhatsApp</a></p>
+      <p>🌐 
+        <a href="https://github.com/karanpatil" target="_blank">GitHub</a> | 
+        <a href="https://linkedin.com/in/karanpatil" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="200" class="rounded-lg mb-4" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-2">
+      <input type="text" name="name" placeholder="Your Name" class="input input-bordered w-full" required />
+      <input type="email" name="email" placeholder="Email" class="input input-bordered w-full" required />
+      <textarea name="message" placeholder="Message" class="textarea textarea-bordered w-full" required></textarea>
+      <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="p-4 bg-neutral text-neutral-content text-center">
+    <p>&copy; 2025 Rushi Patil. Built with ❤️ using Tailwind CSS.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
